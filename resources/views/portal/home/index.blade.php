@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.portal.app')
 
 @section('content')
     <div class="container">
@@ -9,6 +9,8 @@
 
                     <div class="panel-body">
                         Página principal do portal por enquanto!.
+
+                        <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
                     </div>
                 </div>
             </div>

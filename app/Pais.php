@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pais extends Model
 {
-    protected $fillable = ['nome, user_id'];
+    protected $guarded = ['id'];
 
     public $rules = [
         'nome' => 'required|min:3|max:100|unique:pais',

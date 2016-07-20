@@ -22,8 +22,16 @@
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/') }}">Portal</a></li>
                 <li><a href="{{ url('/painel') }}">Painel</a></li>
-                <li><a href="{{ url('/rp') }}">Role-Permissions</a></li>
-                <li><a href="{{ url('/painel/contries') }}">Países</a></li>
+                <li><a href="{{ url('/painel/customers') }}">Clientes</a></li>
+                <li><a href="{{ url('/painel/lists') }}">Listas</a></li>
+                <li><a href="{{ url('/painel/cities') }}">Cidades</a></li>
+                <li><a href="{{ url('/painel/estados') }}">Estados</a></li>
+                <li><a href="{{ url('/painel/countries') }}">Países</a></li>
+                <li><a href="{{ url('/painel/departamentos') }}">Departamentos</a></li>
+                <li><a href="{{ url('/painel/roles') }}">Papéis</a></li>
+                <li><a href="{{ url('/painel/permissions') }}">Permissões</a></li>
+                <li><a href="{{ url('/rp') }}">RP</a></li>
+                <li><a href="{{ url('/painel/users') }}">Usuários</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->

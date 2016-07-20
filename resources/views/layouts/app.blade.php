@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{$titulo or 'MM Cia Marketing Digital'}}</title>
+    <title>{{$title or 'MM Cia Marketing Digital'}}</title>
 
     <!--Bootstrap CSS -->
     <link rel="stylesheet" href="{{ url('assets/all/css/bootstrap.min.css') }}">

@@ -4,9 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use App\Pais;
-use App\User;
-use App\Permission;
+
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -20,6 +18,7 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(GateContract $gate)
     {
         $this->registerPolicies($gate);
+        /*
         //$gate->define('permissao', function(User $user, Class $class){
         //   return $user->id == $post->user_id;
         //});
@@ -34,7 +33,7 @@ class AuthServiceProvider extends ServiceProvider
         $gate->before(function(User $user, $ability){
             if( $user->hasAnyRoles('adm') )
                 return true;
-        });
+        });  */
     }
 
 }

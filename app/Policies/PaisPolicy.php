@@ -3,8 +3,7 @@
 namespace App\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-use App\User;
-use App\Pais;
+
 
 class PaisPolicy
 {
@@ -19,8 +18,5 @@ class PaisPolicy
     {
         //
     }
-    public function editar(User $user, Pais $pais)
-    {
-        return ($user->id == $pais->user_id);
-    }
+
 }

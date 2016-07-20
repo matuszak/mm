@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.portal.app')
 
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading"><!--
                     @forelse($paises as $pais)
                         @can('show', $pais)
                             <h1>{{$pais->nome}}</h1>
@@ -21,10 +21,10 @@
 
                     @endforelse
 
-                </div>
+                --></div>
 
                 <div class="panel-body">
-                    Você está logado {{ auth()->user()->email }}
+                    Gostaria de <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>SAIR</a>
                 </div>
             </div>
         </div>

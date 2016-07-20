@@ -1,13 +1,23 @@
 <?php
-
 namespace App\Http\Controllers\Painel;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\StandardController;
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use App\Role;
 
-class RoleController extends Controller
+class RoleController extends StandardController
 {
-    //
+    protected $model;
+    protected $view = ('painel.roles');
+    protected $route = ('/painel/roles');
+    protected $request, $role;
+    protected $find1 =  ('name'), $find2 = ('label');
+
+    public function __construct(Request $request, Role $role)
+    {
+        $this->request  = $request;
+        $this->model    = $role;
+    }
 }
