@@ -108,10 +108,10 @@ class ListaController extends StandardController
             ->orWhere('listas.nomeGerente', $find)
             ->orWhere('listas.sobrenomeGerente', $find)
             ->orWhere('listas.cnpj', $find)
-            ->orWhre('pais.nome', $find)
-            ->orWhre('estados.nome', $find)
-            ->orWhre('cidades.nome', $find)
-            ->orWhre('departamentos.nome', $find)
+            ->orWhere('pais.nome', $find)
+            ->orWhere('estados.nome', $find)
+            ->orWhere('cidades.nome', $find)
+            ->orWhere('departamentos.nome', $find)
             ->paginate($this->itensForPage);
 
         return view("{$this->view}.gestao", compact('data'));

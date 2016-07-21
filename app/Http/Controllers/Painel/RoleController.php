@@ -13,7 +13,7 @@ class RoleController extends StandardController
     protected $view = ('painel.roles');
     protected $route = ('/painel/roles');
     protected $request, $role;
-    protected $find1 =  ('name'), $find2 = ('label');
+
 
     public function __construct(Request $request, Role $role)
     {

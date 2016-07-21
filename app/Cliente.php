@@ -12,14 +12,18 @@ class Cliente extends Model
     //Validação
     public $rules       = [
         'respNomeContrato'  =>  'required|min:3|max:150',
-        'endereco'          =>  'max:200',
-        'bairro'            =>  'max:100',
-        'cep'               =>  'max:20',
-        'cpfCnpf'           =>  'max:20|unique:clientes',
-        'email'             =>  'email|max:190',
-        'dataVencimento'    =>  'date',
-        'fone0'             =>  'min:9|max:18',
+        'endereco'          =>  'required|max:200',
+        'bairro'            =>  'required|max:100',
+        'cep'               =>  'required|max:20',
+        'cpfCnpj'           =>  'required|max:20|unique:clientes',
+        'email'             =>  'required|email|max:190',
+        'dataVencimento'    =>  'required|date',
+        'dataEntrada'       =>  'required|date',
+        'fone0'             =>  'required|min:9|max:18',
         'fone1'             =>  'min:9|max:18',
         'fonew'             =>  'min:9|max:18',
+        'ativo'             =>  'required',
+        'lista_id'          =>  'required',
+        'cidade_id'         =>  'required',
     ];
 }

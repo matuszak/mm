@@ -22,6 +22,17 @@ Route::group(['prefix' => 'painel', 'middleware' => ['auth'], 'web'], function()
     Route::post('/countries/del/{id}',           'Painel\PaisController@delNow');
     Route::post('/countries/search',             'Painel\PaisController@search');
 
+    // Rotas para gerenciamento dos Customers (clientes);
+    Route::get('/customers',                     'Painel\ClienteController@index');
+    Route::get('/customers/add',                 'Painel\ClienteController@add');
+    Route::post('/customers/add',                'Painel\ClienteController@addNow');
+    Route::get('/customers/edt/{id}/{act}',      'Painel\ClienteController@edt');
+    Route::post('/customers/edt/{id}',           'Painel\ClienteController@edtNow');
+    Route::get('/customers/del/{id}/{act}',      'Painel\ClienteController@del');
+    Route::post('/customers/del/{id}',           'Painel\ClienteController@delNow');
+    Route::get('/customers/show/{id}',           'Painel\ClienteController@show');
+    Route::post('/customers/search',             'Painel\ClienteController@search');
+
     // Rotas para gerenciamento dos Departamentos;
     Route::get('/departamentos',                     'Painel\DepartamentoController@index');
     Route::get('/departamentos/add',                 'Painel\DepartamentoController@add');
@@ -72,6 +83,16 @@ Route::group(['prefix' => 'painel', 'middleware' => ['auth'], 'web'], function()
     Route::get('/roles/del/{id}/{act}',      'Painel\RoleController@del');
     Route::post('/roles/del/{id}',           'Painel\RoleController@delNow');
     Route::post('/roles/search',             'Painel\RoleController@search');
+
+    // Rotas para gerenciamento dos Roles and Permissions;
+    Route::get('/rps',                     'Painel\RpController@index');
+    Route::get('/rps/add',                 'Painel\RpController@add');
+    Route::post('/rps/add',                'Painel\RpController@addNow');
+    Route::get('/rps/edt/{id}/{act}',      'Painel\RpController@edt');
+    Route::post('/rps/edt/{id}',           'Painel\RpController@edtNow');
+    Route::get('/rps/del/{id}/{act}',      'Painel\RpController@del');
+    Route::post('/rps/del/{id}',           'Painel\RpController@delNow');
+    Route::post('/rps/search',             'Painel\RpController@search');
 
     // Rotas para gerenciamento dos Usuários;
     Route::get('/users',                     'Painel\UserController@index');

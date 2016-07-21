@@ -33,8 +33,8 @@ class CreateClientesTable extends Migration
             $table->string('cep', 20);
             $table->string('cpfCnpj', 20);
             $table->integer('numero');
-            $table->integer('valorContrato');
-            $table->integer('quantideMeses');
+            $table->double('valorContrato');
+            $table->integer('quantidadeMeses');
             $table->integer('desconto');
 
             $table->string('email', 190)->unique();
