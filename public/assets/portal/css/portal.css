@@ -1,9 +1,35 @@
+/* Helpers */
+.oculta { font-size:0px; margin: 0px; }
+/*btn:hover btn*/
+.btn-padrao:hover {color: #23dc99; text-decoration: none; background-color: #022727;}
+.btn-padrao {padding: 8px; height: 100%; font-size: 18px; color: #d9f6f7; background-color: #3c5a5d; width: 100%;}
+
+/* Resets */
+
+/* Fonts */
+
+/* Cores */
+
+/* Backgrounds */
+.bg-login{background-color: #f1f1f1;}
+.bg-remember{background-color: #efead9;}
 /* Avisos */
-.aviso {
-    color: #d11314;
-    margin: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    padding: 5px;
-}
+.aviso {color: #d11314; margin: 10px; font-size: 16px; font-weight: bold; text-align: center; padding: 5px;}
+
+/* Formulario-Login */
+.login{margin: 0px auto; max-width: 550px; text-align: center; padding: 2px;}
+.login-top {margin: 0px; background-color: #2edcd2; color: #f5f5f5; padding: 10px 0px 10px 0px; font-size: 36px; font-weight: bold; border-radius: 8px 8px 0px 0px;}
+.login-body {padding: 18px 0px 20px 10px; background-color: #d9f6f7;}
+.form-login {margin: 5px auto auto auto; max-width: 450px; text-align: center; background-color: #d9f6f7;}
+.form-login label{ font-size-adjust: none; font-weight:  bold; color: #185a5d; text-align: left;}
+.form-login input {padding: 16px; height: 100%; font-size: 18px; color: #0e5e67; border: 1px solid #2edcd2;}
+.form-login input[type="submit"]{padding: 16px; width: 100%; height: 100%; font-size: 18px; color: #0e5e67; }
+.remember{float: right; color: #43b7b0;}
+
+/* Formulario-Relembrar senha */
+.form-remember {margin: 200px; max-width: 100%}
+.panel-remember{background-color: #f9e08b; color: #504c3d; font-weight: bold; text-align: center;}
+.panel-body-r{background-color: #f5f5f5;padding:10px;}
+.form-r input{color: #ac4c3d; background-color: #fff; background-image: none; border: 1px solid #f9e08b; padding: 16px; width: 100%; font-size: 18px;}
+.btn-remember:hover {color: #934c3d; text-decoration: none; background-color: #f9c068;}
+.btn-remember {padding: 8px; font-size: 18px; color: #934c3d; background-color: #f9e08b; width: 100%;}

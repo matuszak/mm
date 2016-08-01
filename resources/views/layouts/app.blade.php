@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{$title or 'MM Cia Marketing Digital'}}</title>
+    <title>{{$title or 'MM Dígital Marketing'}}</title>
 
     <!--Bootstrap CSS -->
     <link rel="stylesheet" href="{{ url('assets/all/css/bootstrap.min.css') }}">
@@ -19,6 +19,9 @@
     <!--Resets -->
     <link rel="stylesheet" href="{{ url('assets/portal/css/resets.css') }}">
 
+    <!-- JavaScripts Except case -->
+    <script src="{{ url('assets/all/js/jquery-3.1.0.min.js') }}"></script>
+
     <!--Favorite Icon  <link rel="icon" type="image/png" href="{{ url('assets/all/imgs/favicon.png') }}">    -->
 
 </head>
@@ -28,7 +31,6 @@
     </div>
 
     <!-- JavaScripts -->
-    <script src="{{ url('assets/all/js/jquery-3.1.0.min.js') }}"></script>
     <script src="{{ url('assets/all/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

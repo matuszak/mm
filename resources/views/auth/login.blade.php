@@ -1,7 +1,63 @@
 @extends('layouts.portal.app')
 
 @section('content')
+    <body class="bg-login">
+    <header><h1 class="oculta">Login - Painel MM mídia digital</h1></header>
 <div class="container">
+
+    <section class="login">
+
+        <div class="login-top">
+            <h1 class="login-top text-uppercase">Login</h1>
+        </div>
+
+        <div class="login-body">
+            <form class="form-login" role="form" method="POST" action="{{ url('/login') }}">
+                {{ csrf_field() }}
+
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                    <label for="email" class="text-uppercase">E-mail</label>
+
+                    <div class="form-group">
+                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="E-mail para login">
+
+                        @if ($errors->has('email'))
+                            <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                    <label for="password" class="text-uppercase">Senha</label>
+
+                    <div class="form-group">
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Sua senha">
+
+                        @if ($errors->has('password'))
+                            <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                        @endif
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                        <a class="btn btn-link remember" href="{{ url('/password/reset') }}">Esqueceu sua senha?</a>
+
+                        <button type="submit" class="btn btn-padrao">
+                            <i class="fa fa-btn fa-sign-in"></i> Entrar
+                        </button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Formulário padrão
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -58,9 +114,11 @@
                             </div>
                         </div>
                     </form>
+                    -->
                 </div>
             </div>
         </div>
     </div>
 </div>
+    </body>
 @endsection
