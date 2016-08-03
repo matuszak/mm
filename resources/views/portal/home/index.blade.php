@@ -1,19 +1,14 @@
 @extends('layouts.portal.app')
 
 @section('content')
+    <!--Container Open -->
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Bem vindo!</div>
-
-                    <div class="panel-body">
-                        Página principal do portal por enquanto!.
-
-                        <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="bg-parallax-slide">
+        <section class="padding-50 text-center slide">
+            <h1 class="titulo-slide">Web page... MM - Mídia Digita</h1>
+            <p class="descricao_slide">Seu conteúdo dinâmico na internet em mais lugares venha fazer parte da nossa rede e tenha tudo da mais melhor forma na internet</p>
+        </section>
     </div>
+    </div>
+    <!--Container Close -->
 @endsection

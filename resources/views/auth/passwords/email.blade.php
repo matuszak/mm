@@ -34,7 +34,7 @@
 
                     <div class="form-group">
                             <button type="submit" class="btn-remember">
-                                <i class="fa fa-btn fa-envelope"></i> Enviar Link para recuperar senha!
+                                <i class="fa fa-btn fa-envelope"></i> Enviar link de recuperação de senha
                             </button>
                     </div>
                 </form>

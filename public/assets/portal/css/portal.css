@@ -1,18 +1,41 @@
 /* Helpers */
 .oculta { font-size:0px; margin: 0px; }
+
 /*btn:hover btn*/
 .btn-padrao:hover {color: #23dc99; text-decoration: none; background-color: #022727;}
 .btn-padrao {padding: 8px; height: 100%; font-size: 18px; color: #d9f6f7; background-color: #3c5a5d; width: 100%;}
 
 /* Resets */
+html,
+body {
+    min-height: 100%;
+}
+.clear{clear: both;}
 
 /* Fonts */
 
+/*Paddings*/
+.padding-10{padding: 10px 0px;  }
+.padding-20{padding: 20px 0px;  }
+.padding-30{padding: 30px 0px;  }
+.padding-40{padding: 40px 0px;  }
+.padding-50{padding: 50px 0px;  }
+.padding-60{padding: 60px 0px;  }
+.padding-70{padding: 70px 0px;  }
+.padding-80{padding: 80px 0px;  }
+.padding-90{padding: 90px 0px;  }
+.padding-100{padding: 100px 0px; }
+
 /* Cores */
+
+/* Parallax */
+.bg-parallax-slide{background-image: url("/assets/all/imgs/empresas/bg-empresa.jpg"); background-attachment: fixed;}
 
 /* Backgrounds */
 .bg-login{background-color: #f1f1f1;}
-.bg-remember{background-color: #efead9;}
+.bg-remember{background-color: #fff;}
+.logo-mm{background-color: #fff; padding: 0px 70px; border-bottom: dotted 1px;}
+
 /* Avisos */
 .aviso {color: #d11314; margin: 10px; font-size: 16px; font-weight: bold; text-align: center; padding: 5px;}
 
@@ -28,8 +51,31 @@
 
 /* Formulario-Relembrar senha */
 .form-remember {margin: 200px; max-width: 100%}
-.panel-remember{background-color: #f9e08b; color: #504c3d; font-weight: bold; text-align: center;}
-.panel-body-r{background-color: #f5f5f5;padding:10px;}
-.form-r input{color: #ac4c3d; background-color: #fff; background-image: none; border: 1px solid #f9e08b; padding: 16px; width: 100%; font-size: 18px;}
-.btn-remember:hover {color: #934c3d; text-decoration: none; background-color: #f9c068;}
-.btn-remember {padding: 8px; font-size: 18px; color: #934c3d; background-color: #f9e08b; width: 100%;}
+.panel-remember{background-color: #f49c15; color: #fff; font-weight: bold; text-align: center;}
+.panel-body-r{background-color: #f5f5f5;padding:5px 10px 2px 10px;}
+.form-r input{color: #f49c15; background-color: #fff; background-image: none; border: 1px solid #f49c15; padding: 14px; width: 100%; font-size: 16px;}
+.btn-remember:hover {color: #ffffff; text-decoration: none; background-color: #c37d10;}
+.btn-remember {padding: 8px; font-size: 15px; color: #fff; background-color: #f49c15; width: 100%;}
+
+/* Div header */
+.img-logo{max-width: 200px;}
+.header-home{background-color: #2b669a;}
+.logo-mm{float: left;}
+.logo-mm img{max-width: 200px;}
+/* Div menu-home */
+.menu-home ul{}
+.menu-home li{ display: inline-flex; list-style: none; float: right; margin: 10px 20px;}
+.menu-home li a{text-decoration: none; color: #cccccc; margin: 10px 20px; padding: 10px 10px;}
+.menu-home li a:hover{color: #fff; background-color: #26bceb; }
+
+/* Div User */
+.info-bar{padding: 5px 10px; margin: 0px; background-color: #2b669a; color: #fff; height: 34px; font-weight: bold; border-bottom: 3px solid #f49c15;}
+.info-bar{ padding: 0px 50px; float: left; font-weight: bold; color: #fff;}
+.info-bar a{ padding: 0px 50px; float: right; font-weight: bold; color: #fff; }
+.info-bar a:hover{color: #d3d6de; text-decoration: none; }
+
+/* Barra de navegação */
+.nav-custom{max-width: 100%; width: 100%;}
+.navbar-padrao {border: #ffffff solid 1px; background-color: #2b669a;}
+.navbar-brand img {width: 25px;}
+.navbar-brand {background-color: #2b669a; color: #ffff00;}

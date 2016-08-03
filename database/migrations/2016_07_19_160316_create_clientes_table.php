@@ -35,7 +35,7 @@ class CreateClientesTable extends Migration
             $table->integer('numero');
             $table->double('valorContrato');
             $table->integer('quantidadeMeses');
-            $table->integer('desconto');
+            $table->double('desconto');
 
             $table->string('email', 190)->unique();
 
