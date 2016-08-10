@@ -1,0 +1,66 @@
+/* Helpers */
+.oculta { font-size:0px; margin: 0px; }
+
+/*btn:hover btn*/
+.btn-padrao:hover {color: #23dc99; text-decoration: none; background-color: #022727;}
+.btn-padrao {padding: 8px; height: 100%; font-size: 18px; color: #d9f6f7; background-color: #3c5a5d; width: 100%;}
+
+/* Resets */
+html,
+body {min-height: 100%; }
+.clear{clear: both;}
+
+/* Fonts */
+
+/*Paddings*/
+.padding-10{padding: 10px 0px;  }
+.padding-20{padding: 20px 0px;  }
+.padding-30{padding: 30px 0px;  }
+.padding-40{padding: 40px 0px;  }
+.padding-50{padding: 50px 0px;  }
+.padding-60{padding: 60px 0px;  }
+.padding-70{padding: 70px 0px;  }
+.padding-80{padding: 80px 0px;  }
+.padding-90{padding: 90px 0px;  }
+.padding-100{padding: 100px 0px; }
+
+/* Cores */
+.azulClaro{background-color: #0099dd;}
+.azul{background-color: #0081bb; }
+.azulEscuro{background-color: #035377; }
+.vermelho{background-color: #ff4b3a; }
+.vermelhoEscuro{background-color: #e03627; }
+.laranja{background-color: #fe7f0a;}
+.laranjaEscuro{background-color: #f25301;}
+.roxo{background-color: #af59ba;}
+.roxoEscuro{background-color: #a442b1;}
+.verde{background-color: #01cd6c; }
+.verdeEscuro{background-color: #00b05b; }
+.verdeBonito{background-color: #00be9c;}
+.verdeBonitoEscuro{background-color: #01a185;}
+.amarelo{background-color: #ffc501;}
+.amareloEscuro{background-color: #ff9c00; }
+.cinzaClaro{background-color: #ebf1f1;}
+.cinzaEscuro{background-color: #bcc4c7;}
+.cinzaAzulado{background-color: #8fa7a9;}
+.cinzaAzuladoEscuro{background-color: #798d8e;}
+.asfalto{background-color: #23475f;}
+.asfaltoEscuro{background-color: #1c3d50;}
+.branco{ background-color: #FFFFFF; }
+
+.fontAzul{color: #0099dd;}
+.fontBranca{color: #FFFFFF;}
+
+
+
+/* lineUpper */
+.lineProfile{max-width:100%; background-color: #0081bb; color: #f5f5f5; font-weight: 400; height: 36px; }
+.lineProfile a{color: #f5f5f5;}
+.btn-profile {display: inline-block; padding: 3px 18px; margin-bottom: 0; margin-top: 4px; font-size: 14px; font-weight: 600; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: #0099dd; background-image: none; border: 1px solid transparent; border-radius: 4px;}
+.btn-profile.focus, .btn-profile:focus, .btn-profile:hover { background-color: #0081BB; color: #ffffff; text-decoration: none;  border: 1px solid #0099dd;}
+/* lineUpper */
+.subline{max-width: 100%; height: 3px; background-color: #035377;}
+
+/* linhaLogo */
+.mm-logo{background-color: #ccc;}
+.mm-logo img{float: left; position: relative; max-width: 200px; padding: 0px; margin: 0px 0px 0px 100px;}

@@ -13,8 +13,11 @@
     <!--Font Icons CSS -->
     <link rel="stylesheet" href="{{ url('assets/all/css/font-awesome.min.css') }}">
 
+    <!--Portal CSS
+        <link rel="stylesheet" href="{{ url('assets/portal/css/portal.css') }}">
+    -->
     <!--Portal CSS -->
-    <link rel="stylesheet" href="{{ url('assets/portal/css/portal.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/portal/css/mm-componentes.css') }}">
 
     <!--Resets -->
     <link rel="stylesheet" href="{{ url('assets/portal/css/resets.css') }}">
@@ -31,14 +34,29 @@
 
 </head>
 <body>
-<div class="clear"></div>
+
 <header class="header-home">
-    <h1 class="oculta">{{$title or 'MM - Dígital Marketing'}}</h1>
-    <div class="logo-mm">
-        <img src="{{ url('assets/all/imgs/logo.png') }}" alt="Logo (MM - Dígital Marketing)" title="MM - Dígital Marketing" class="img-logo">
-    </div><!-- Logo MM Dígital Marketing Close -->
-<!--Inclui Menu -->
-@include('layouts.portal.navBar')
+
+    <div class="clear"></div>
+
+    <h1 class="oculta">{{$title or 'MM - Marketing Digital'}}</h1>
+
+    <div class="lineProfile">
+        <div class="col-md-9"></div>
+        <div class="col-md-3"><a href="/login" class="btn-profile">Acessar sua conta</a></div>
+    </div>
+    <!-- close profile div -->
+
+    <div class="subline"></div>
+
+    <div class="mm-logo">
+        <img src="{{ url('assets/all/imgs/mmlogo.png') }}" alt="Logo (MM - Marketing Digital)" title="MM - Marketing Digital" class="img-logo">
+    </div>
+    <!-- Logo MM Dígital Marketing Close -->
+<div>
+    <!--Inclui Menu -->
+@include('layouts.portal.nav')
+    </div>
 </header>
    <!-- Incluí conteúdo geral -->
     <div class="container-fluid">
