@@ -128,6 +128,10 @@ Route::group(['middleware' => [], 'web'], function(){
     $this->post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
     $this->post('password/reset', 'Auth\PasswordController@reset');
 });
+Route::get('/contact', 'portal\PortalController@contact');
+Route::get('/services', 'portal\PortalController@services');
+Route::get('/about', 'portal\PortalController@about');
+
 
 Route::get('/', 'portal\PortalController@index');
 

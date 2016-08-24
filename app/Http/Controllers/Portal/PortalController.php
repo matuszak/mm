@@ -12,4 +12,16 @@ class PortalController extends Controller
     {
         return view('portal.home.index');
     }
+    public function about()
+    {
+        return view('portal.home.sessions.about');
+    }
+    public function services()
+    {
+        return view('portal.home.sessions.services');
+    }
+    public function contact()
+    {
+        return view('portal.home.sessions.contact');
+    }
 }

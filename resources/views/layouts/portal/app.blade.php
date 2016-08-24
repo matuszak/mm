@@ -31,47 +31,54 @@
     <script src="{{ url('assets/all/js/respond.min.js') }}"></script>
     <script src="{{ url('assets/all/js/modernizr.js') }}"></script>
     <![endif]-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
 
-<header class="header-home">
+<header class="header-logo">
+
+    <h1 class="oculta">{{$title or 'mm - marketing digital'}}</h1>
 
     <div class="clear"></div>
 
-    <h1 class="oculta">{{$title or 'MM - Marketing Digital'}}</h1>
-
     <div class="lineProfile">
         <div class="col-md-9"></div>
-        <div class="col-md-3"><a href="/login" class="btn-profile">Acessar sua conta</a></div>
+        <div class="col-md-3"><a href="/login" class="btn-profile text-uppercase">acessar sua conta</a></div>
     </div>
     <!-- close profile div -->
 
     <div class="subline"></div>
 
     <div class="mm-logo">
-        <img src="{{ url('assets/all/imgs/mmlogo.png') }}" alt="Logo (MM - Marketing Digital)" title="MM - Marketing Digital" class="img-logo">
+        <img src="{{ url('assets/all/imgs/mmlogo.png') }}" alt="logo (mm - marketing digital)" title="mm - marketing digital" class="img-logo">
     </div>
-    <!-- Logo MM Dígital Marketing Close -->
-<div>
-    <!--Inclui Menu -->
-@include('layouts.portal.nav')
+    <!-- logo mm dígital marketing close -->
+    <div>
+        <!--inclui menu -->
+        @include('layouts.portal.nav')
     </div>
 </header>
-   <!-- Incluí conteúdo geral -->
-    <div class="container-fluid">
-        <!-- conteúdo dinâmico -->
-        @yield('content')
-    </div>
+<!-- incluí conteúdo geral -->
+<div class="container-fluid">
+    <!-- conteúdo dinâmico -->
+    @yield('content')
+</div>
 
 
-<!-- JavaScripts jQquery -->
+<!-- javascripts jqquery -->
 <script src="{{ url('assets/all/js/jquery.min.js') }}"></script>
 
-<!-- JavaScripts jQuery-UI -->
+<!-- javascripts jquery-ui -->
 <script src="{{ url('assets/all/js/jquery-ui.min.js') }}"></script>
 
-<!-- JavaScripts -->
+<!-- javascripts -->
 <script src="{{ url('assets/all/js/bootstrap.min.js') }}"></script>
+<section class="preRodape asfalto fontBranca">
+    Apenas testando
+</section>
+<section class="rodape asfaltoEscuro fontAzul">
+    <h1>Rodapé ficará aqui nesta parte</h1>
+</section>
 </body>
 </html>

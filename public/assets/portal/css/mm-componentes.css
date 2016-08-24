@@ -5,12 +5,52 @@
 .btn-padrao:hover {color: #23dc99; text-decoration: none; background-color: #022727;}
 .btn-padrao {padding: 8px; height: 100%; font-size: 18px; color: #d9f6f7; background-color: #3c5a5d; width: 100%;}
 
+.btn-custom-login {padding: 18px; height: 100%; font-size: 18px; color: #ebf1f1; background-color: #0099dd; width: 100%;}
+.btn-custom-login:hover {color: #FFF; text-decoration: none; background-color: #035377; border: 1px solid #0099dd;}
+
+.btn-custom-azul {padding: 18px; height: 100%; font-size: 18px; color: #ebf1f1; background-color: #0099dd; width: 100%;}
+.btn-custom-azul:hover {color: #FFF; text-decoration: none; background-color: #035377; border: 1px solid #0099dd;}
+
+.btn-custom-amarelo {padding: 18px; height: 100%; font-size: 18px; color: #ebf1f1; background-color: #ffc501; width: 100%;}
+.btn-custom-amarelo:hover {color: #FFF; text-decoration: none; background-color: #ff9c00; border: 2px solid #ffc501;}
+
+.btn-custom-verde {padding: 18px; height: 100%; font-size: 18px; color: #ebf1f1; background-color: #01cd6c; width: 100%;}
+.btn-custom-verde:hover {color: #FFF; text-decoration: none; background-color: #00b05b; border: 2px solid #01cd6c;}
+
+
+/** formata elementos que tem backgrounds parallax **/
+.parallax {
+    font-family: 'tahoma', sans-serif;
+    color:#FFF;
+    margin: 0 auto;
+    width: 100%;
+    /*max-width: 1920px;*/
+    position: relative;
+    min-height: 100%;
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Define backgrounds dos divs */
+#cafe {background-image: url("/assets/all/imgs/marketing/cafezinho.jpg"); background-attachment: fixed;}
+#portfolio {background-image: url(img2.jpg);}
+
 /* Resets */
 html,
 body {min-height: 100%; }
 .clear{clear: both;}
+section { display: inline-block; } /*Para ajustar padrão do chrome*/
 
 /* Fonts */
+
+/* Larguras */
+.width-90{width: 90%;}
+.width-80{width: 80%;}
+.width-70{width: 70%;}
+.width-60{width: 60%;}
+.width-50{width: 50%;}
 
 /*Paddings*/
 .padding-10{padding: 10px 0px;  }
@@ -48,19 +88,105 @@ body {min-height: 100%; }
 .asfaltoEscuro{background-color: #1c3d50;}
 .branco{ background-color: #FFFFFF; }
 
-.fontAzul{color: #0099dd;}
+.fontAzulClaro{color: #0099dd;}
+.fontAzul{background-color: #0081bb; }
+.fontAzulEscuro{background-color: #035377; }
+.fontVermelho{background-color: #ff4b3a; }
+.fontVermelhoEscuro{background-color: #e03627; }
+.fontLaranja{background-color: #fe7f0a;}
+.fontLaranjaEscuro{background-color: #f25301;}
+.fontRoxo{background-color: #af59ba;}
+.fontRoxoEscuro{background-color: #a442b1;}
+.fontVerde{background-color: #01cd6c; }
+.fontVerdeEscuro{background-color: #00b05b; }
+.fontVerdeBonito{background-color: #00be9c;}
+.fontVerdeBonitoEscuro{background-color: #01a185;}
+.fontAmarelo{background-color: #ffc501;}
+.fontAmareloEscuro{background-color: #ff9c00; }
+.fontCinzaClaro{background-color: #ebf1f1;}
+.fontCinzaEscuro{background-color: #bcc4c7;}
+.fontCinzaAzulado{background-color: #8fa7a9;}
+.fontCinzaAzuladoEscuro{background-color: #798d8e;}
+.fontAsfalto{background-color: #23475f;}
+.fontAsfaltoEscuro{background-color: #1c3d50;}
 .fontBranca{color: #FFFFFF;}
-
-
 
 /* lineUpper */
 .lineProfile{max-width:100%; background-color: #0081bb; color: #f5f5f5; font-weight: 400; height: 36px; }
 .lineProfile a{color: #f5f5f5;}
 .btn-profile {display: inline-block; padding: 3px 18px; margin-bottom: 0; margin-top: 4px; font-size: 14px; font-weight: 600; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: #0099dd; background-image: none; border: 1px solid transparent; border-radius: 4px;}
 .btn-profile.focus, .btn-profile:focus, .btn-profile:hover { background-color: #0081BB; color: #ffffff; text-decoration: none;  border: 1px solid #0099dd;}
+
 /* lineUpper */
 .subline{max-width: 100%; height: 3px; background-color: #035377;}
 
 /* linhaLogo */
 .mm-logo{background-color: #ccc;}
 .mm-logo img{float: left; position: relative; max-width: 200px; padding: 0px; margin: 0px 0px 0px 100px;}
+
+/* Menu header */
+.navegation ul{ text-decoration: none; list-style: none;}
+.navegation li a {padding: 43px 75px 48px 75px; display: inline;  float: right;  margin: 10px 5px 10px 25px; text-decoration: none;}
+.navegation li a:hover {
+    background-color: #f3f4f5;
+    border-right: 1px solid;
+    border-left: solid 1px;
+}
+/*.navegation a:focus, a:hover {background-color: #fff; color: #23527c; text-decoration: underline; border-bottom: 5px solid; text-decorate: none;} */
+
+/*  Rodapé */
+.preRodape{margin: 200px 0px 0px 0px; padding: 70px 35%; max-width: 100%; height: 125px;}
+.rodape{margin: 0px 0px 0px 0px; padding: 150px 15%; max-width: 100%; height: 300px;}
+
+/*  Formulários */
+/* Form-Login */
+.sessao-login{ margin: 125px 10px;}
+.sessao-login-top {margin: 0px; padding: 10px 36px; font-size: 22px; font-weight: bold; }
+.sessao-login-corpo{padding: 56px 70px 25px 70px; background-color: #fff; border: solid 1px #0099dd;}
+.sessao-login-form{color: #0099dd; }
+.sessao-login-form label{font-size: 16px; font-weight: bold; margin: 13px 0px 3px 0px;}
+.sessao-login-form input { font-size: 18px; padding: 32px 12px; border: solid 1px #0099dd; background: #fff; }
+.sessao-login-form input:focus { border-color: #0099dd; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); }
+.input-group-addon-login {padding: 6px 12px;  font-size: 26px; font-weight: 400; line-height: 1; color: #0099dd; text-align: center; background-color: #ebf1f1; border: 1px solid #0099dd; border-radius: 4px; }
+.a-form-login{float: right; text-decoration: none; padding: 8px 4px; font-size: medium; margin: 4px}
+.a-form-login:hover{text-decoration: none; color: #1c3d50;}
+
+/*  Form-Azul */
+.sessao-azul{ margin: 125px 10px; }
+.sessao-azul-top {margin: 0px; padding: 10px 36px; font-size: 22px; font-weight: bold; }
+.sessao-azul-corpo{padding: 56px 70px 25px 70px; background-color: #fff; border: solid 1px #0099dd;}
+.sessao-azul-form{color: #0099dd; }
+.sessao-azul-form label{font-size: 16px; font-weight: bold; margin: 13px 0px 3px 0px;}
+.sessao-azul-form input { font-size: 18px; padding: 32px 12px; border: solid 1px #0099dd; background: #fff; }
+.sessao-verde-form textarea { font-size: 18px; padding: 32px 12px; border: solid 1px #0099dd; background: #fff; }
+.sessao-azul-form input:focus { border-color: #0099dd; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); }
+.input-group-addon-azul {padding: 6px 12px;  font-size: 26px; font-weight: 400; line-height: 1; color: #0099dd; text-align: center; background-color: #ebf1f1; border: 1px solid #0099dd; border-radius: 4px; }
+.a-form-azul{float: right; text-decoration: none; padding: 8px 4px; font-size: medium;}
+.a-form-azul:hover{text-decoration: none; color: #1c3d50;}
+
+/*Form-Amarelo*/
+.sessao-amarelo{ margin: 125px 10px;}
+.sessao-amarelo-top {margin: 0px; padding: 10px 36px; font-size: 22px; font-weight: bold; }
+.sessao-amarelo-corpo{padding: 56px 70px 25px 70px; background-color: #fff; border: solid 1px #ffc501;}
+.sessao-amarelo-form{color: #ffc501; }
+.sessao-amarelo-form label{font-size: 16px; font-weight: bold; margin: 13px 0px 3px 0px;}
+.sessao-amarelo-form input { font-size: 18px; padding: 32px 12px; border: solid 1px #ff9c00; background: #fff; }
+.sessao-verde-form textarea { font-size: 18px; padding: 32px 12px; border: solid 1px #ff9c00; background: #fff; }
+.sessao-amarelo-form input:focus { border-color: #ff9c00; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 197, 1, 0.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 197, 1, 0.6); }
+.input-group-addon-amarelo {padding: 6px 12px;  font-size: 26px; font-weight: 400; line-height: 1; color: #ff9c00; text-align: center; background-color: #ebf1f1; border: 1px solid #ffc501; border-radius: 4px; }
+.a-form-amarelo{float: right; text-decoration: none; padding: 8px 4px; font-size: medium;}
+.a-form-amarelo:hover{text-decoration: none; color: #c37d10;}
+
+/*Form-Verde*/
+.sessao-verde{ margin: 125px 10px 50px 10px;}
+.sessao-verde-top {margin: 0px; padding: 10px 36px; font-size: 22px; font-weight: bold; }
+.sessao-verde-corpo{padding: 56px 70px 25px 70px; border: solid 1px #01cd6c;}
+.sessao-verde-corpo-branco{padding: 56px 70px 25px 70px; background-color: #fff; border: solid 1px #01cd6c;}
+.sessao-verde-form{color: #01cd6c; }
+.sessao-verde-form label{font-size: 16px; font-weight: bold; margin: 13px 0px 3px 0px;}
+.sessao-verde-form input { font-size: 18px; padding: 32px 12px; border: solid 1px #00b05b; background: #fff; }
+.sessao-verde-form textarea { font-size: 18px; padding: 32px 12px; border: solid 1px #00b05b; background: #fff; }
+.sessao-verde-form input:focus { border-color: #00b05b; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(1, 205, 108, 0.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(1, 205, 108, 0.6); }
+.input-group-addon-verde {padding: 6px 12px;  font-size: 26px; font-weight: 400; line-height: 1; color: #00b05b; text-align: center; background-color: #ebf1f1; border: 1px solid #01cd6c; border-radius: 4px; }
+.a-form-verde{float: right; text-decoration: none; padding: 8px 4px; font-size: medium;}
+.a-form-verde:hover{text-decoration: none; color: #006130;}

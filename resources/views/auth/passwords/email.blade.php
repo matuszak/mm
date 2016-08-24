@@ -1,21 +1,18 @@
 @extends('layouts.portal.app')
 
 <!-- Main Content -->
-<body class="bg-remember">
 @section('content')
 <div class="container">
-
-    <div class="form-remember">
-        <div class="panel panel-remember">
-            <div class="panel-heading text-uppercase">Relembrar senha</div>
-            <div class="panel-body-r">
+<section class="sessao-amarelo">
+    <div class="sessao-amarelo-top fontBranca amareloEscuro"><h1>Recuperação de senha</h1></div>
+           <div class="sessao-amarelo-corpo">
                 @if (session('status'))
                     <div class="alert alert-success">
                         {{ session('status') }}
                     </div>
                 @endif
 
-                <form class="form-r" role="form" method="POST" action="{{ url('/password/email') }}">
+                <form class="sessao-amarelo-form" role="form" method="POST" action="{{ url('/password/email') }}">
                     {{ csrf_field() }}
 
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -33,15 +30,13 @@
                     </div>
 
                     <div class="form-group">
-                            <button type="submit" class="btn-remember">
-                                <i class="fa fa-btn fa-envelope"></i> Enviar link de recuperação de senha
-                            </button>
+                        <button type="submit" class="btn-custom-amarelo">
+                            <i class="fa fa-btn fa-envelope"></i> Enviar link de recuperação de senha
+                        </button>
                     </div>
                 </form>
             </div>
-        </div>
-    </div>
-</div>
 
+</section>
+</div>
 @endsection
-</body>
