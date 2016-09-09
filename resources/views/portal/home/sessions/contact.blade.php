@@ -4,7 +4,16 @@
 <div id="cafe">
         <!--Container Open -->
 <div class="container">
-    <section class="sessao-verde">
+    <section class="sessao-verde fontBranca">
+        <h1>CONTATO</h1>
+        <p>
+            Através desta página você poderá entrar em contato com os responsáveis pela nossa empresa.
+        </p>
+        <p>
+            Você também pode mandar um email direto sem precisar passar pelo formulário abaixo, caso ache mais conveniente.
+            Mande email para: MM.BR@GMAIL.COM
+        </p>
+        <br>
     <section class="sessao-verde-top fontBranca verdeEscuro">
         <h1>
             Marcamos um cafezinho?

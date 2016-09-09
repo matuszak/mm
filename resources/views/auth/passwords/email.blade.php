@@ -2,7 +2,7 @@
 
 <!-- Main Content -->
 @section('content')
-<div class="container">
+<div class="container-fluid">
 <section class="sessao-amarelo">
     <div class="sessao-amarelo-top fontBranca amareloEscuro"><h1>Recuperação de senha</h1></div>
            <div class="sessao-amarelo-corpo">
